@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#container {
+  background-color: white;
+  background-image: url("./listPics/notepad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column; 
+  line-height: 30px;
+}
+
+#formInput {
+  width: 1000x;
+  height: 500px;   
+  padding-left: 400px;  
+}
+
+h1, h2, p {
+  font-family: 'Pacifico', cursive;
+  color: black;
+}
+
+#title {
+  padding-top: 130px;
+  padding-left: 520px;
+  font-size: 40px;
+}
+
+#task1 {
+  padding-left: 400px;
+  font-size: 30px;
+}
+
+p {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 12px;
+  background-color: rgb(198, 193, 193);
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+  border: solid black 1px; 
+  box-shadow: 10px 10px 10px;
+}
+
+button {
+  font-family: 'Pacifico', cursive;
   color: white;
+  letter-spacing: 2px;
+  background-color: black;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
