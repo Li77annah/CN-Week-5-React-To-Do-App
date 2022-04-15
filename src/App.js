@@ -26,11 +26,17 @@ const App = () => {
       <h1 id="title">YOUR TO DO LIST</h1>
       <h2 id="task1">Task 1: Be Fabulous</h2>
       <div id="formInput">
-        <input onChange={updateInput}/>
+        <input placeholder="Type task here" onChange={updateInput}/>
         <button onClick={addTask}>ADD TASK</button>
         <button onClick={deleteTask}>DELETE TASK</button>
         {tasks.map((item, index) => {
-          return <p>{item}</p>
+          return (
+            <div>
+              <p>{item}</p>
+              <input id="box" type="checkbox" defaultChecked={false}/>
+            </div>
+          )
+
         })}
       </div>
     </div>

@@ -45,7 +45,7 @@ input {
   font-weight: bolder;
   font-size: 15px;
   border: solid black 1px; 
-  box-shadow: 10px 10px 10px;
+  box-shadow: 5px 5px 5px; 
 }
 
 button {
@@ -57,4 +57,10 @@ button {
   margin-right: 5px;
   cursor: pointer;
 }
+
+
+
+
+
+
 
