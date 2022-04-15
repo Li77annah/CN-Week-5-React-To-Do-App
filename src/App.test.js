@@ -21,7 +21,13 @@ test("Add task button is rendered" , () => {
 
 test("Delete task button is rendered" , () => {
   render(<App />)
-  let element = screen.getAllByText("DELETE TASK")
+  let element = screen.getAllByText("DELETE TASKS")
   expect(element.length).toBe(1)
+})
+
+test("Placeholder text is displayed" , () => {
+  render(<App />)
+  let element = screen.getByPlaceholderText("Type task here")
+  expect(element).toBeInTheDocument ()
 })
 

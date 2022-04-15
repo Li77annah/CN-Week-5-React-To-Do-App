@@ -5,13 +5,14 @@
   background-image: url("./listPics/notepad.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   display: flex;
   flex-direction: column; 
   line-height: 30px;
 }
 
 #formInput {
-  width: 1000x;
+  width: 1000px;
   height: 500px;   
   padding-left: 400px;  
 }
@@ -33,7 +34,7 @@ h1, h2, p {
 }
 
 p {
-  font-size: 25px;
+  font-size: 15px;
   letter-spacing: 2px;
 }
 

@@ -28,12 +28,12 @@ const App = () => {
       <div id="formInput">
         <input placeholder="Type task here" onChange={updateInput}/>
         <button onClick={addTask}>ADD TASK</button>
-        <button onClick={deleteTask}>DELETE TASK</button>
+        <button onClick={deleteTask}>DELETE TASKS</button>
         {tasks.map((item, index) => {
           return (
             <div>
               <p>{item}</p>
-              <input id="box" type="checkbox" defaultChecked={false}/>
+              <input type="checkbox" defaultChecked={false}/>
             </div>
           )
 
